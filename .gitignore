@@ -8,6 +8,7 @@
 venv
 werkzeug
 Werkzeug-*
+virtual
 
 # environment variables
 .env
