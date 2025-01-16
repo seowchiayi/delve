@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-const apiRoutes = require('.');
+const apiRoutes = require('./index');
 
 const backendUrl = process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:8000';
 
@@ -12,10 +12,11 @@ app.use(cors({
     origin: process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000', // Allow requests from frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-    credentials: false
+    credentials: true
 }));
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // Parse URL-encoded payloads
 // Add backend URL to locals for use in routes or middleware
 app.use((req, res, next) => {
     res.locals.backendUrl = backendUrl;
