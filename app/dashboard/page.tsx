@@ -9,6 +9,8 @@ import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { Button } from "@/app/ui/button"
 import { Alert, AlertDescription, AlertTitle } from '@/app/ui/alert'
 import { CheckCircle2 } from 'lucide-react'
+import { User } from '@supabase/supabase-js'
+
 
 export default function Home() {
   const [selectedConversation, setSelectedConversation] = useState<string | null>(null)
@@ -17,7 +19,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen)
 
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState<User | null>(null)
   const [showSuccessAlert, setShowSuccessAlert] = useState(false)
   const router = useRouter()
   const searchParams = useSearchParams()
