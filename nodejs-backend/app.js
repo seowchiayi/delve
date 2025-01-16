@@ -1,8 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-const apiRoutes = require('./routes/api');
+const apiRoutes = require('.');
 
+const backendUrl = process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:8000';
 
 const app = express();
 
@@ -15,6 +16,11 @@ app.use(cors({
 }));
 
 app.use(express.json());
+// Add backend URL to locals for use in routes or middleware
+app.use((req, res, next) => {
+    res.locals.backendUrl = backendUrl;
+    next();
+});
 // Routes
 app.use('/api', apiRoutes);
 // Start server
