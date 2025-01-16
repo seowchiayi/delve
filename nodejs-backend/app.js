@@ -12,6 +12,7 @@ app.use(cors({
     origin: process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000', // Allow requests from frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+    credentials: false
 }));
 
 app.use(express.json());
