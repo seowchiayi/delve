@@ -56,7 +56,6 @@ export function ChatArea({ selectedConversation, selectedLLM }: ChatAreaProps) {
           headers: {
             'Content-Type': 'application/json',
           },
-          credentials: 'include', // Important if sending cookies
           body: JSON.stringify({ content: userMessage.content}),
         })
 
