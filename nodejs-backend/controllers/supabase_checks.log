@@ -1,0 +1,175 @@
+
+Timestamp: 2025-01-16T04:34:22.749Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: null
+PITR Enabled for all projects: null
+
+Timestamp: 2025-01-16T04:43:51.045Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: null
+PITR Enabled for all projects: null
+
+Timestamp: 2025-01-16T04:44:44.602Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: [object Object]
+
+Timestamp: 2025-01-16T04:46:03.979Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-16T04:46:42.640Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-16T04:47:31.535Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-16T04:48:50.292Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-16T04:49:50.124Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-16T04:51:47.133Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-16T04:53:40.039Z
+MFA Status: [
+  {
+    "id": "2ecb483e-a80a-41c2-b969-01ccb03b1960",
+    "email": "aliceseow@gmail.com"
+  }
+]
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}

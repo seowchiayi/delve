@@ -1,6 +1,11 @@
 const axios = require('axios');
 const { Configuration, OpenAIApi } = require('openai');
 const markdownIt = require('markdown-it');
+const { createClient } = require('@supabase/supabase-js')
+const fs = require('fs')
+const path = require('path')
+require('dotenv').config()
+
 // Load environment variables
 //const GITHUB_ACCESS_TOKEN = process.env.GITHUB_ACCESS_TOKEN;
 // const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
@@ -11,10 +16,9 @@ const markdownIt = require('markdown-it');
 // const openai = new OpenAI({
 //     apiKey: OPENAI_API_KEY, // Add your key here or through .env
 // });
-dotenv.config()
 
-const supabaseUrl = process.env.SUPABASE_URL
-const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+const supabaseUrl = process.env.SUPABASE_URL || null;
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || null;
 
 if (!supabaseUrl || !supabaseServiceRoleKey) {
   throw new Error('Missing Supabase URL or service role key')
@@ -41,7 +45,7 @@ async function checkMFAStatus() {
     return mfaStatus
   } catch (error) {
     console.error('Error checking MFA status:', error)
-    return null
+    return error
   }
 }
 
@@ -53,7 +57,7 @@ async function checkRLS() {
     return data
   } catch (error) {
     console.error('Error checking RLS status:', error)
-    return null
+    return error
   }
 }
 
@@ -65,12 +69,13 @@ async function checkPITR() {
     return data.every(project => project.pitr_enabled)
   } catch (error) {
     console.error('Error checking PITR status:', error)
-    return null
+    return error
   }
 }
 
 async function performChecks() {
   const mfaStatus = await checkMFAStatus()
+
   const rlsStatus = await checkRLS()
   const pitrStatus = await checkPITR()
 
@@ -78,37 +83,31 @@ async function performChecks() {
 Timestamp: ${new Date().toISOString()}
 MFA Status: ${JSON.stringify(mfaStatus, null, 2)}
 RLS Status: ${JSON.stringify(rlsStatus, null, 2)}
-PITR Enabled for all projects: ${pitrStatus}
+PITR Enabled for all projects: ${JSON.stringify(pitrStatus, null, 2)}
 `
 
   const logFilePath = path.join(__dirname, 'supabase_checks.log')
   fs.appendFileSync(logFilePath, logMessage)
 
   console.log('Checks completed. Results logged to supabase_checks.log')
+
+  return logMessage
 }
 
 // Chat endpoint
 const chat = async (req, res) => {
     const { content } = req.body;
-    if (content.toLowerCase() === 'perform checks?') {
+    if (content.toLowerCase() === 'perform checks') {
         //const response = `You asked about: ${content}. This is a mock response from the internal documentation system.`;
         //res.json({ response });
-        performChecks();
+        const results = await performChecks();
+        res.json({ response: results });
     }
     else {
         const response = `${content}`
         res.json({ response });
     }
-    
 
-    // (async () => {
-    //     const chatResponse = await openai.chat.completions.create({
-    //         model: "gpt-4",
-    //         messages: [{ role: "user", content: "Hello, OpenAI!" }],
-    //     });
-    
-    //     console.log(chatResponse.choices[0].message.content);
-    // })();
 };
 
 // // URL processing endpoint
