@@ -25,7 +25,7 @@ interface ChatAreaProps {
 
 const backend = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-  : "http://localhost:8000";
+  : "http://localhost:8000/api";
 
 export function ChatArea({ selectedConversation, selectedLLM }: ChatAreaProps) {
   const [messages, setMessages] = useState<Message[]>([])
@@ -50,14 +50,14 @@ export function ChatArea({ selectedConversation, selectedLLM }: ChatAreaProps) {
       setMessages(prevMessages => [...prevMessages, userMessage])
       setInputValue('')
       setIsLoading(true)
-
       try {
         const response = await fetch(`${backend}/chat`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ content: userMessage.content, llm: selectedLLM }),
+          credentials: 'include', // Important if sending cookies
+          body: JSON.stringify({ content: userMessage.content}),
         })
 
         if (!response.ok) {
