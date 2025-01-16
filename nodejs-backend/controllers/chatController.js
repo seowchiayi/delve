@@ -11,13 +11,89 @@ const markdownIt = require('markdown-it');
 // const openai = new OpenAI({
 //     apiKey: OPENAI_API_KEY, // Add your key here or through .env
 // });
+dotenv.config()
+
+const supabaseUrl = process.env.SUPABASE_URL
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+if (!supabaseUrl || !supabaseServiceRoleKey) {
+  throw new Error('Missing Supabase URL or service role key')
+}
+
+const supabase = createClient(supabaseUrl, supabaseServiceRoleKey, {
+  auth: {
+    autoRefreshToken: false,
+    persistSession: false
+  }
+})
+
+async function checkMFAStatus() {
+  try {
+    const { data, error } = await supabase.auth.admin.listUsers()
+    if (error) throw error
+
+    const mfaStatus = data.users.map(user => ({
+      id: user.id,
+      email: user.email,
+      mfaEnabled: user.factors && user.factors.length > 0
+    }))
+
+    return mfaStatus
+  } catch (error) {
+    console.error('Error checking MFA status:', error)
+    return null
+  }
+}
+
+async function checkRLS() {
+  try {
+    const { data, error } = await supabase.rpc('check_rls_status')
+    if (error) throw error
+
+    return data
+  } catch (error) {
+    console.error('Error checking RLS status:', error)
+    return null
+  }
+}
+
+async function checkPITR() {
+  try {
+    const { data, error } = await supabase.from('projects').select('pitr_enabled')
+    if (error) throw error
+
+    return data.every(project => project.pitr_enabled)
+  } catch (error) {
+    console.error('Error checking PITR status:', error)
+    return null
+  }
+}
+
+async function performChecks() {
+  const mfaStatus = await checkMFAStatus()
+  const rlsStatus = await checkRLS()
+  const pitrStatus = await checkPITR()
+
+  const logMessage = `
+Timestamp: ${new Date().toISOString()}
+MFA Status: ${JSON.stringify(mfaStatus, null, 2)}
+RLS Status: ${JSON.stringify(rlsStatus, null, 2)}
+PITR Enabled for all projects: ${pitrStatus}
+`
+
+  const logFilePath = path.join(__dirname, 'supabase_checks.log')
+  fs.appendFileSync(logFilePath, logMessage)
+
+  console.log('Checks completed. Results logged to supabase_checks.log')
+}
 
 // Chat endpoint
 const chat = async (req, res) => {
     const { content } = req.body;
-    if (content.toLowerCase() === 'Is MFA enabled for each user?') {
-        const response = `You asked about: ${content}. This is a mock response from the internal documentation system.`;
-        res.json({ response });
+    if (content.toLowerCase() === 'perform checks?') {
+        //const response = `You asked about: ${content}. This is a mock response from the internal documentation system.`;
+        //res.json({ response });
+        performChecks();
     }
     else {
         const response = `${content}`

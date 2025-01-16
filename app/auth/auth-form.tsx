@@ -55,7 +55,7 @@ export default function AuthForm() {
         setShowConfirmationAlert(true)
       }
     } catch (error) {
-      setError(error.message)
+      setError(error instanceof Error ? error.message : 'An unexpected error occurred')
     } finally {
       setIsLoading(false)
     }
