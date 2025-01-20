@@ -11,6 +11,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.47.14",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "github": "^14.0.0",
+    "markdown-it": "^14.1.0",
+    "openai": "^4.78.1",
     "@heroicons/react": "^2.2.0",
     "@hookform/resolvers": "^3.3.1",
     "@radix-ui/react-accordion": "^1.2.0",
