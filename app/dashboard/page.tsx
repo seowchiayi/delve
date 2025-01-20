@@ -110,6 +110,7 @@ export default function Home() {
         <ChatArea 
           selectedConversation={selectedConversation}
           selectedLLM={selectedLLM}
+          id={user?.id}
         />
       </div>
       <Suspense fallback={<div>Loading search parameters...</div>}>

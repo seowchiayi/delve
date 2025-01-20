@@ -1,0 +1,602 @@
+
+Timestamp: 2025-01-18T13:09:37.361Z
+MFA Status: {}
+RLS Status: {}
+PITR Enabled for all projects: {}
+
+Timestamp: 2025-01-18T13:12:22.784Z
+MFA Status: {}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-18T13:12:49.853Z
+MFA Status: {}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-18T13:15:41.630Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-18T13:25:53.454Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-18T13:46:59.623Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-18T13:51:27.511Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.undefined does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-18T13:54:29.573Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-18T13:57:03.423Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-18T14:01:50.709Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-19T11:32:24.139Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-19T11:44:47.982Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-19T11:48:22.367Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-19T11:48:38.115Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-19T12:04:27.656Z
+MFA Status: {
+  "code": "42703",
+  "details": null,
+  "hint": null,
+  "message": "column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"
+}
+RLS Status: {
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": null,
+  "message": "Could not find the function public.check_rls_status without parameters in the schema cache"
+}
+PITR Enabled for all projects: {
+  "code": "42P01",
+  "details": null,
+  "hint": null,
+  "message": "relation \"public.projects\" does not exist"
+}
+
+Timestamp: 2025-01-19T12:13:21.363Z
+MFA Status: "[object Object]"
+RLS Status: "[object Object]"
+PITR Enabled for all projects: "[object Object]"
+
+Timestamp: 2025-01-19T12:16:34.249Z
+MFA Status: "[object Object]"
+RLS Status: "[object Object]"
+PITR Enabled for all projects: "[object Object]"
+
+Timestamp: 2025-01-19T12:19:17.198Z
+MFA Status: [object Object]
+RLS Status: "[object Object]"
+PITR Enabled for all projects: "[object Object]"
+
+Timestamp: 2025-01-19T12:25:35.494Z
+MFA Status: Error checking MFA status: [object Object]
+RLS Status: "Error checking RLS status: [object Object]"
+PITR Enabled for all projects: "Error checking PITR status: [object Object]"
+
+Timestamp: 2025-01-19T12:29:55.323Z
+MFA Status: Error checking MFA status: [object Object]
+RLS Status: "Error checking RLS status: [object Object]"
+PITR Enabled for all projects: "Error checking PITR status: [object Object]"
+
+Timestamp: 2025-01-19T12:30:12.406Z
+MFA Status: Error checking MFA status: [object Object]
+RLS Status: "Error checking RLS status: [object Object]"
+PITR Enabled for all projects: "Error checking PITR status: [object Object]"
+
+Timestamp: 2025-01-19T12:31:35.740Z
+MFA Status: Error checking MFA status: [object Object]
+RLS Status: Error checking RLS status: [object Object]
+PITR Enabled for all projects: Error checking PITR status: [object Object]
+
+Timestamp: 2025-01-19T12:33:08.273Z
+MFA Status: Error checking MFA status: [object Object]
+RLS Status: Error checking RLS status: [object Object]
+PITR Enabled for all projects: Error checking PITR status: [object Object]
+
+Timestamp: 2025-01-19T12:33:27.884Z
+MFA Status: Error checking MFA status: [object Object]
+RLS Status: Error checking RLS status: [object Object]
+PITR Enabled for all projects: Error checking PITR status: [object Object]
+
+    Timestamp: 2025-01-19T12:36:51.292Z
+    MFA Status: Error checking MFA status: [object Object]
+    RLS Status: Error checking RLS status: [object Object]
+    PITR Enabled for all projects: Error checking PITR status: [object Object]
+  
+    Timestamp: 2025-01-19T12:40:03.394Z
+    MFA Status: Error checking MFA status: [object Object]
+    RLS Status: Error checking RLS status: [object Object]
+    PITR Enabled for all projects: Error checking PITR status: [object Object]
+  
+    Timestamp: 2025-01-19T12:40:46.834Z
+    MFA Status: Error checking MFA status: [object Object]
+    RLS Status: Error checking RLS status: [object Object]
+    PITR Enabled for all projects: Error checking PITR status: [object Object]
+  
+    Timestamp: 2025-01-19T12:48:04.785Z
+    Error checking MFA status: {"code":"42703","details":null,"hint":null,"message":"column profiles.9fb1f41c-4906-4281-8e72-5cdd555b6a11 does not exist"}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T15:01:34.180Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T15:03:55.891Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T15:08:11.340Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T15:09:04.769Z
+    MFA is enabled for [object Object] user(s).
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T15:09:40.735Z
+    MFA is enabled for [{"id":"9fb1f41c-4906-4281-8e72-5cdd555b6a11","updated_at":null,"username":null,"full_name":null,"avatar_url":null,"website":null,"email":"seowchiayi@gmail.com"}] user(s).
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T15:10:28.009Z
+    MFA is enabled for [{"id":"9fb1f41c-4906-4281-8e72-5cdd555b6a11","updated_at":null,"username":null,"full_name":null,"avatar_url":null,"website":null,"email":"seowchiayi@gmail.com"}] user(s).
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T16:06:48.311Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T16:09:35.800Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T16:10:47.330Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T16:11:06.390Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T17:19:14.597Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T17:19:33.866Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T17:19:55.032Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T17:20:10.974Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-19T17:20:25.668Z
+    Error checking MFA status: {}
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status without parameters in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T04:28:51.857Z
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status with parameter table_name or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status(table_name) in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T05:31:21.561Z
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status with parameter table_name or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status(table_name) in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T05:36:52.189Z
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status with parameter table_name or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status(table_name) in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T05:38:55.283Z
+    Error checking RLS status: {"code":"PGRST202","details":"Searched for the function public.check_rls_status with parameter table_name or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.","hint":null,"message":"Could not find the function public.check_rls_status(table_name) in the schema cache"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T05:49:47.579Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"permission denied for schema public"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T06:36:44.431Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"permission denied for schema public"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T06:59:43.856Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"permission denied for schema public"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T07:01:31.579Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"permission denied for schema public"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T07:05:12.031Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"permission denied for schema public"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T07:09:57.626Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"permission denied for schema public"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T07:12:04.999Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"permission denied for schema public"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T07:12:36.721Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"permission denied for schema public"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T07:20:59.715Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"permission denied for schema public"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T07:27:38.533Z
+    Error checking RLS status: {"code":"42704","details":null,"hint":null,"message":"language \"plgsql\" does not exist"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T14:43:25.727Z
+    Error checking RLS status: {"code":"42501","details":null,"hint":null,"message":"must be owner of function public.check_rls_status"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T14:45:59.333Z
+    Error checking RLS status: {"code":"2F005","details":null,"hint":null,"message":"control reached end of function without RETURN"}
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T14:56:40.650Z
+    RLS is not enabled.
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T14:59:07.856Z
+    RLS is enabled.
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T14:59:30.791Z
+
+    RLS is enabled.
+
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T15:01:33.599Z
+
+    RLS is enabled.
+    
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T15:04:50.829Z
+
+    RLS is enabled.
+    
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T15:16:21.487Z
+
+    RLS is enabled.
+
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T15:20:03.797Z
+    No users found or MFA is not enabled for any user.
+    RLS is enabled.
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T15:22:17.043Z
+    No users found or MFA is not enabled for any user.
+    RLS is enabled.
+    Error checking PITR status: {"code":"42P01","details":null,"hint":null,"message":"relation \"public.projects\" does not exist"}
+  
+    Timestamp: 2025-01-20T15:51:45.366Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T15:52:05.773Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T15:54:37.744Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:00:50.617Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:01:31.854Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:02:33.893Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:03:03.147Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:04:30.401Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:04:46.259Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:05:01.477Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:05:23.264Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:05:50.068Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:06:20.073Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:07:29.022Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:07:43.073Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    Error checking PITR status: {}
+  
+    Timestamp: 2025-01-20T16:08:16.349Z
+    MFA is not enabled for user.
+    RLS is enabled.
+    PITR is not enabled for all projects.
+  
