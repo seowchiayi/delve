@@ -51,6 +51,7 @@ export function ChatArea({ selectedConversation, selectedLLM, id }: ChatAreaProp
         const response = await fetch(`${backend}/chat`, {
           method: 'POST',
           headers: {
+            'Authorization': 'Bearer ' + process.env.SUPABASE_ACCESS_TOKEN,
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({ content: userMessage.content, user: id}),
