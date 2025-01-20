@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "fastapi-dev": "pip3 install -r requirements.txt && python3 -m fastapi run api/main.py --reload",
+    "node-dev": "nodemon server.js",
     "next-dev": "next dev",
-    "dev": "bun run next-dev",
+    "dev": "concurrently \"bun run next-dev\" \"bun run node-dev\" ",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

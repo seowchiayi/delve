@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-const apiRoutes = require('./api/index');
+const apiRoutes = require('./server/routes/apiRoutes');
 
 const backendUrl = process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:8000';
 

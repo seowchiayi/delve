@@ -9,11 +9,11 @@ const { createClient } = require('@supabase/supabase-js');
 
 router.use(express.static('public'));
 
-const supabaseUrl = process.env.SUPABASE_URL || null;
-const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || null;
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || null;
-const supabaseProjectRef = process.env.SUPABASE_PROJECT_ID
-const supabaseToken = process.env.SUPABASE_ACCESS_TOKEN
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || null;
+const supabaseServiceRoleKey = process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY || null;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || null;
+const supabaseProjectRef = process.env.NEXT_PUBLIC_SUPABASE_PROJECT_ID
+const supabaseToken = process.env.NEXT_PUBLIC_SUPABASE_ACCESS_TOKEN
 
 if (!supabaseUrl || !supabaseServiceRoleKey) {
   throw new Error('Missing Supabase URL or service role key')
