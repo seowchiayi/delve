@@ -7,7 +7,7 @@ const path = require('path')
 const { createClient } = require('@supabase/supabase-js');
 
 
-app.use(express.static('public'));
+router.use(express.static('public'));
 
 const supabaseUrl = process.env.SUPABASE_URL || null;
 const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || null;

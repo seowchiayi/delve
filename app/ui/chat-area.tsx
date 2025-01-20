@@ -23,6 +23,8 @@ const backend = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`
   : "http://localhost:8000/api";
 
+const token = process.env.SUPABASE_ACCESS_TOKEN
+
 export function ChatArea({ selectedConversation, selectedLLM, id }: ChatAreaProps) {
   const [messages, setMessages] = useState<Message[]>([])
   const [inputValue, setInputValue] = useState('')
@@ -47,11 +49,13 @@ export function ChatArea({ selectedConversation, selectedLLM, id }: ChatAreaProp
       setMessages(prevMessages => [...prevMessages, userMessage])
       setInputValue('')
       setIsLoading(true)
+      
       try {
+        
         const response = await fetch(`${backend}/chat`, {
           method: 'POST',
           headers: {
-            'Authorization': 'Bearer ' + process.env.SUPABASE_ACCESS_TOKEN,
+            'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({ content: userMessage.content, user: id}),
