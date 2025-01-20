@@ -23,7 +23,7 @@ const backend = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`
   : "http://localhost:8000/api";
 
-const token = process.env.SUPABASE_ACCESS_TOKEN
+const token = process.env.NEXT_PUBLIC_SUPABASE_ACCESS_TOKEN
 
 export function ChatArea({ selectedConversation, selectedLLM, id }: ChatAreaProps) {
   const [messages, setMessages] = useState<Message[]>([])
