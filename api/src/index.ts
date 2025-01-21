@@ -78,7 +78,7 @@ async function checkRLS() {
 async function checkPITR() {
   try {
     const response = await fetch(`https://api.supabase.com/v1/projects/${supabaseProjectRef}/database/backups`, {
-        method: 'POST',
+        method: 'GET',
         headers: {
             'Authorization': `Bearer ${supabaseToken}`, // Include your API key
             'Content-Type': 'application/json',
