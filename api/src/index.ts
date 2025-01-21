@@ -101,7 +101,7 @@ async function performChecks() {
   
   return logMessage
 }
-app.post("/api/chat", async (req, res) => {
+app.get("/api/chat", async (req, res) => {
   const { content } = req.body
   
   if (content.toLowerCase() === 'perform checks') {

@@ -51,7 +51,7 @@ export function ChatArea({ selectedConversation, selectedLLM, id }: ChatAreaProp
       
       try {
         const response = await fetch(`${backend}/chat`, {
-          method: 'POST',
+          method: 'GET',
           headers: {
             'Content-Type': 'application/json',
           },
