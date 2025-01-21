@@ -18,13 +18,12 @@ app.use(cors({
     credentials: true
 }));
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || null;
-const supabaseServiceRoleKey = process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY || null;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || null;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabaseProjectRef = process.env.NEXT_PUBLIC_SUPABASE_PROJECT_ID
 const supabaseToken = process.env.NEXT_PUBLIC_SUPABASE_ACCESS_TOKEN
 
-if (!supabaseUrl || !supabaseServiceRoleKey) {
+if (!supabaseUrl || !supabaseAnonKey) {
   throw new Error('Missing Supabase URL or service role key')
 }
 
@@ -33,7 +32,7 @@ const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     autoRefreshToken: false,
     persistSession: false
   }
-})
+});
 
 async function checkMFAStatus() {
   try {
