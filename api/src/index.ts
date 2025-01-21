@@ -1,13 +1,22 @@
-require('dotenv').config();
+import Express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import fs from 'fs'
+import path from 'path'
+import { createClient } from '@supabase/supabase-js';
 
-const express = require('express');
-const router = express();
-const fs = require('fs')
-const path = require('path')
-const { createClient } = require('@supabase/supabase-js');
+const app = Express();
 
+dotenv.config();
 
-router.use(express.static('public'));
+app.use(Express.json());
+
+app.use(cors({
+    origin: process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000', // Allow requests from frontend
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+    credentials: true
+}));
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || null;
 const supabaseServiceRoleKey = process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY || null;
@@ -26,14 +35,12 @@ const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   }
 })
 
-async function checkMFAStatus(id) {
+async function checkMFAStatus() {
   try {
     // Get Authenticator Assurance Level - https://supabase.com/docs/reference/javascript/auth-mfa-getauthenticatorassurancelevel
     const { data, error } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel()
-    const { currentLevel, nextLevel, currentAuthenticationMethods } = data
     if (error) throw error
-
-    return data.length > 0 
+    return data?.currentLevel
       ? `MFA is enabled for ${JSON.stringify(data)} user(s).` 
       : 'MFA is not enabled for user.';
 
@@ -65,7 +72,7 @@ async function checkPITR() {
     const data = await response.json()
 
     
-    if (!response.ok) throw error
+    if (!response.ok) throw Error
 
     return data.pitr_enabled 
       ? 'PITR is enabled for all projects.' 
@@ -75,10 +82,10 @@ async function checkPITR() {
   }
 }
 
-async function performChecks(user) {
-  const mfaStatus = await checkMFAStatus(user)
-  const rlsStatus = await checkRLS(user)
-  const pitrStatus = await checkPITR(user)
+async function performChecks() {
+  const mfaStatus = await checkMFAStatus()
+  const rlsStatus = await checkRLS()
+  const pitrStatus = await checkPITR()
 
   const logMessage = `
     Timestamp: ${new Date().toISOString()}
@@ -93,23 +100,20 @@ async function performChecks(user) {
   
   return logMessage
 }
-
-router.post('/chat', async (req, res) => {
-  // Access the Authorization header
-  const content = req.body
-
-  if (content.content.toLowerCase() === 'perform checks') {
-    //const response = `You asked about: ${content}. This is a mock response from the internal documentation system.`;
-    //res.json({ response });
-    const response = await performChecks(content.user);
+app.post("/api/chat", async (req, res) => {
+  const { content } = req.body
+  
+  if (content.toLowerCase() === 'perform checks') {
+    const response = await performChecks();
     res.json({ response });
   }
   else {
     const response = `${content}`
     res.json({ response });
   }
-
 });
 
-
-module.exports = router;
+const PORT: number = parseInt(process.env.PORT || '8000', 10);
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});

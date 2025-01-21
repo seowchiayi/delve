@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "node-dev": "nodemon server.js",
-    "next-dev": "next dev",
-    "dev": "concurrently \"bun run next-dev\" \"bun run node-dev\" ",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

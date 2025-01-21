@@ -50,7 +50,6 @@ export function ChatArea({ selectedConversation, selectedLLM, id }: ChatAreaProp
       setIsLoading(true)
       
       try {
-        
         const response = await fetch(`${backend}/chat`, {
           method: 'POST',
           headers: {
