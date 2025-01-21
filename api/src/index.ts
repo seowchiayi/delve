@@ -10,6 +10,7 @@ const app = Express();
 dotenv.config();
 
 app.use(Express.json());
+app.options('*', cors()); // Enable CORS preflight requests
 
 const allowedOrigins = [
   'https://delve-fysb.vercel.app',
@@ -116,6 +117,7 @@ async function performChecks() {
 }
 app.post("/api/chat", async (req, res) => {
   const { content } = req.body
+  console.log('Request Origin:', req.headers.origin);
   
   if (content.toLowerCase() === 'perform checks') {
     const response = await performChecks();

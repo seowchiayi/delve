@@ -19,11 +19,12 @@ interface ChatAreaProps {
 }
 
 
-const backend = process.env.NEXT_PUBLIC_VERCEL_URL
-  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`
+const backend = process.env.NODE_ENV === 'production'
+  ? `https://delve-fysb.vercel.app/api`
   : "http://localhost:8000/api";
 
-  
+  console.log(process.env.NODE_ENV)
+
 export function ChatArea({ selectedConversation, selectedLLM, id }: ChatAreaProps) {
   const [messages, setMessages] = useState<Message[]>([])
   const [inputValue, setInputValue] = useState('')
