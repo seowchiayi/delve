@@ -9,16 +9,29 @@ const app = Express();
 
 dotenv.config();
 
-app.options('*', cors()); // Enable preflight for all routes
-
 app.use(Express.json());
 
-app.use(cors({
-    origin: 'https://delve-fysb.vercel.app' || 'http://localhost:3000', // Allow requests from frontend
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-    credentials: true
-}));
+const allowedOrigins = [
+  'https://delve-fysb.vercel.app',
+  'http://localhost:3000', // Add local development origin
+];
+
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps or Postman)
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+  })
+);
+
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
