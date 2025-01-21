@@ -9,6 +9,8 @@ const app = Express();
 
 dotenv.config();
 
+app.options('*', cors()); // Enable preflight for all routes
+
 app.use(Express.json());
 
 app.use(cors({
