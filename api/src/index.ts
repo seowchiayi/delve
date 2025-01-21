@@ -109,15 +109,14 @@ async function performChecks() {
     ${pitrStatus}
   `
 
-  const logFilePath = path.join(__dirname, 'supabase_checks.log')
-  fs.appendFileSync(logFilePath, logMessage)
-  console.log('Checks completed. Results logged to supabase_checks.log')
+  // const logFilePath = path.join(__dirname, 'supabase_checks.log')
+  // fs.appendFileSync(logFilePath, logMessage)
+  console.log(logMessage)
   
   return logMessage
 }
 app.post("/api/chat", async (req, res) => {
   const { content } = req.body
-  console.log('Request Origin:', req.headers.origin);
   
   if (content.toLowerCase() === 'perform checks') {
     const response = await performChecks();
