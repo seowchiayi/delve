@@ -54,6 +54,7 @@ export function ChatArea({ selectedConversation, selectedLLM, id }: ChatAreaProp
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
           },
           body: JSON.stringify({ content: userMessage.content, user: id}),
         })
