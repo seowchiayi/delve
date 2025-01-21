@@ -64,7 +64,7 @@ async function checkRLS() {
 async function checkPITR() {
   try {
     const response = await fetch(`https://api.supabase.com/v1/projects/${supabaseProjectRef}/database/backups`, {
-        method: 'GET',
+        method: 'POST',
         headers: {
             'Authorization': `Bearer ${supabaseToken}`, // Include your API key
             'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ async function performChecks() {
   
   return logMessage
 }
-app.get("/api/chat", async (req, res) => {
+app.post("/api/chat", async (req, res) => {
   const { content } = req.body
   
   if (content.toLowerCase() === 'perform checks') {
